@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+
+.container,
+.squid-img {
+  flex-direction: column
+}
+
+.container,
+.guess-number {
+  background-color: var(--background-color)
+}
+
+.guess-number,
+.to-find-number {
+  color: var(--text-color);
+  font-family: inherit
+}
+
+.btn,
+.guess-number,
+.to-find-number {
+  font-family: inherit
+}
+
+.guess-number,
+.title,
+.to-find-number {
+  text-align: center
+}
+
+:root {
+  --background-color: #000;
+  --primary-pink: #ff036a;
+  --trophy-color: #DAA520;
+  --text-color: #f8f9fa
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-family: "Press Start 2P", system-ui
+}
+
+.container {
+  padding: 4.2rem;
+  display: flex;
+  height: 100vh;
+  overflow: auto
+}
+
+.title-img {
+  width: 40%
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4.2rem;
+  column-gap: 3.2rem
+}
+
+.squid-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--text-color);
+  position: relative
+}
+
+.squid-img img {
+  width: 60%
+}
+
+.to-find-number {
+  position: absolute;
+  width: 8.1rem;
+  height: 8.1rem;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  background: var(--background-color);
+  outline: 0;
+  border: 3px solid var(--text-color);
+  font-size: 3.2rem;
+  transform: translate(-50%, 44%)
+}
+
+.guess-number {
+  border: 3px solid var(--text-color)
+}
+
+.btn {
+  background-color: var(--text-color);
+  font-size: 1.6rem;
+  color: var(--background-color);
+  font-weight: 600;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: .3s
+}
+
+.btn:hover,
+.result-container,
+.text {
+  color: var(--text-color)
+}
+
+.btn:hover {
+  background-color: var(--primary-pink);
+  box-shadow: inset 0 0 0 3px #fffcfc
+}
+
+.guess-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--text-color);
+  position: relative;
+  padding: 1rem;
+}
+
+.text {
+  font-size: 1.4rem
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem
+}
+
+.result-container {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem
+}
+
+.score {
+  display: flex;
+  align-items: center
+}
+
+.score-value {
+  color: var(--primary-pink)
+}
+
+.btn--play {
+  position: absolute;
+  bottom: 1rem
+}
+
+.guess-number {
+  width: 14rem;
+  height: 7rem;
+  background-color: var(--background-color);
+  outline: 0;
+  border: 3px solid var(--text-color);
+  font-size: 4.2rem;
+  color: var(--text-color);
+  margin-bottom: 3.2rem
+}
+
+.trophy-icon {
+  color: var(--trophy-color);
+  font-size: 3rem;
+  margin-right: 1rem
+}
+
+.flicker {
+  -webkit-animation: 1s infinite flicker
+}
+
+@-webkit-keyframes flicker {
+
+  0%,
+  13%,
+  9% {
+    opacity: 0
+  }
+
+  10%,
+  20% {
+    opacity: .5
+  }
+
+  25% {
+    opacity: 1
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="'Guess My Number' A Fun and Addictive JavaScript Game! Challenge yourself with this engaging and interactive number-guessing game. Try to guess the hidden number with the fewest attempts. Perfect for all ages, 'Guess My Number' offers endless entertainment and sharpens your guessing skills."/>
+   <link rel="icon" href="img/logo/favicon.png"/>
+   <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png"/>
+   <link rel="manifest" href="manifest.webmanifest"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <title>Guess My Number &mdash; A Fun JS Game</title>  
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <img class="title-img" src="img/GuessMyNumber.png" alt="Guess My Number">
+        </div>
+        <div class="grid">
+            <div class="squid-img">
+                <img src="img/squidImg.png" alt="">
+                <input type="text" class="to-find-number" aria-labelledBy="secret number" value="?">
+
+            </div>
+            <div class="guess-input-container">
+                <div class="input-container">
+                    <p class="text">Enter number between 1 to 20</p>
+                    <input type="number" name="" id="" class="guess-number" aria-labelledBy="user input number" autofocus min="0" max="20">
+                    <div class="btn-container">
+                        <button type="submit" class="btn btn--check">Check!</button>
+                        <button type="submit" class="btn btn--reset">Clear</button>
+                    </div>
+                </div>
+                <div class="result-container">
+                    <p class="result">Start guessing...</p>
+                    <span class="score score-div">Score : <p class="score-value">0</p> </span>
+                    <span class="score high-score-div"><ion-icon class="trophy-icon" name="trophy-outline"></ion-icon>
+                        High Score : <p class="high-score-value">0</p> </span>
+
+                </div>
+                <button type="submit" class="btn  btn--play">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <audio id="loose" style="visibility: hidden;">
+        <source src="audio/loose.mp3" type="audio/mp3" aria-label="loose audio">
+    </audio>
+
+    <audio id="win" style="visibility: hidden;">
+        <source src="audio/win.mp3" type="audio/mp3" aria-label="win audio">
+    </audio>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

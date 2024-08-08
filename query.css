@@ -1,0 +1,80 @@
+/* rem and em do NOT depend on the html font size in media queries 
+Instead 1em = 1rem = 16px */
+/* ************** */
+/* Below 1344px(smaller desktop               */
+/* ************** */
+@media (max-width:84em) {
+    .to-find-number {
+        width: 7.1rem;
+        height: 7.1rem;
+        transform: translate(-50%, 50%);
+      }
+ }
+ /* ************** */
+ /* Below 1200px(Landscape Tablets)*/
+ /* ************** */
+ @media(max-width:75em)
+ {
+    .to-find-number {
+        width: 6.1rem;
+        height: 6.1rem;
+        transform: translate(-50%, 42%);
+      }
+ }
+ /* ************** */
+ /* Below 1200px(Tablets)*/
+ /* ************** */
+ @media(max-width:64.375em) {
+    .to-find-number {
+        width: 5.1rem;
+        height: 5.1rem;
+        transform: translate(-50%, 72%);
+      }
+ }
+ 
+ @media(max-width:59.9375em){
+    .to-find-number {
+       
+        transform: translate(-50%, 111%);
+      }
+ }
+ @media(max-width: 55em){
+    html{
+        font-size: 50%;
+    }
+    .title-img {
+        width: 80%;
+    }
+    .to-find-number{
+        width: 5.1rem;
+        height: 5.1rem;
+        transform: translate(-50%, 44%);
+        font-size: 1.2rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+    .grid{
+        grid-template-columns: auto;
+    }
+    .guess-input-container{
+border-top:none ;
+padding: 3.2rem;
+
+    }
+    .guess-number {
+        font-size: 3.2rem;
+    }
+    .squid-img{
+border-bottom: none;
+    }
+    .btn--play{
+        position: relative;
+        bottom: 0;
+}
+ }
+ /* - Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+ /* - Spacing System (px)
+ 2 / 4 / 8 / 12 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+ 
